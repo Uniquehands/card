@@ -62,24 +62,21 @@
         }
 
         .tags {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: #b0c4de; /* Ash background */
             color: #ffd700; /* Golden text */
-            padding: 5px 10px;
-            border-radius: 20px;
+            margin-top: 10px;
             text-align: center;
-            z-index: 1; /* Ensure it stays above other content */
         }
 
         .tags span {
-            font-weight: bold;
+            background-color: #b0c4de; /* Ash background */
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 0 3px;
         }
 
         .tags::before {
             content: "Tags: ";
-            font-weight: normal;
+            font-weight: bold;
         }
 
         .movie-description {
@@ -98,9 +95,6 @@
         <div class="movie-card">
             <img class="movie-image" src="images (1).png" alt="Movie 1">
             <div class="movie-details">
-                <div class="tags">
-                    <span>Tag1</span>, <span>Tag2</span>, <span>Tag3</span>
-                </div>
                 <h2>Movie Title 1</h2>
                 <p>Release Year: 2022</p>
                 <p>Genre: Action</p>
@@ -110,6 +104,11 @@
                     <span class="star">★</span>
                     <span class="star">★</span>
                     <span class="star">★</span>
+                </div>
+                <div class="tags">
+                    <span>Tag1</span>
+                    <span>Tag2</span>
+                    <span>Tag3</span>
                 </div>
                 <div class="movie-description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at urna ac ligula consectetur consequat. Nullam dapibus, felis at tincidunt pulvinar, eros augue volutpat nunc...</p>
@@ -121,9 +120,6 @@
         <div class="movie-card">
             <img class="movie-image" src="images (1).png" alt="Movie 2">
             <div class="movie-details">
-                <div class="tags">
-                    <span>Tag4</span>, <span>Tag5</span>, <span>Tag6</span>
-                </div>
                 <h2>Movie Title 2</h2>
                 <p>Release Year: 2023</p>
                 <p>Genre: Drama</p>
@@ -133,6 +129,11 @@
                     <span class="star">★</span>
                     <span class="star">★</span>
                     <span class="star">★</span>
+                </div>
+                <div class="tags">
+                    <span>Tag4</span>
+                    <span>Tag5</span>
+                    <span>Tag6</span>
                 </div>
                 <div class="movie-description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at urna ac ligula consectetur consequat. Nullam dapibus, felis at tincidunt pulvinar, eros augue volutpat nunc...</p>

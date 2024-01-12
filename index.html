@@ -12,6 +12,14 @@
             padding: 0;
         }
 
+        .movie-container {
+            height: 100vh; /* Set a fixed height for the section */
+            overflow-y: auto; /* Enable vertical scrolling */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .movie-card {
             width: 300px;
             margin: 20px;
@@ -26,8 +34,8 @@
         }
 
         .movie-image {
-            width: 700px;
-            height: 200px;
+            width: 100%; /* Set image width to 100% */
+            height: 100%; /* Set image height to 100% */
             object-fit: cover;
         }
 
@@ -54,11 +62,16 @@
         }
 
         .tag {
-            background-color: #ffd700;
-            color: #000;
+            background-color:  #B2BEB5;
+            color: #FFFFFF;
             padding: 5px 10px;
             border-radius: 20px;
             text-align: center;
+        }
+
+        .movie-description {
+            margin-top: 10px;
+            text-align: justify;
         }
 
         h2, p {
@@ -68,8 +81,7 @@
 </head>
 <body>
 
-    <section style="display: flex; flex-wrap: wrap; justify-content: center;">
-
+    <div class="movie-container">
         <div class="movie-card">
             <img class="movie-image" src="movie1.jpg" alt="Movie 1">
             <div class="movie-details">
@@ -90,10 +102,44 @@
                     <div class="tag">Tag4</div>
                     <div class="tag">Tag5</div>
                 </div>
+                <div class="movie-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at urna ac ligula consectetur consequat. Nullam dapibus, felis at tincidunt pulvinar, eros augue volutpat nunc...</p>
+                    <!-- Add more paragraphs as needed -->
+                </div>
             </div>
         </div>
 
         <div class="movie-card">
             <img class="movie-image" src="movie2.jpg" alt="Movie 2">
+            <div class="movie-details">
+                <h2>Movie Title 2</h2>
+                <p>Release Year: 2023</p>
+                <p>Genre: Drama</p>
+                <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="tags">
+                    <div class="tag">Tag6</div>
+                    <div class="tag">Tag7</div>
+                    <div class="tag">Tag8</div>
+                    <div class="tag">Tag9</div>
+                    <div class="tag">Tag10</div>
+                </div>
+                <div class="movie-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at urna ac ligula consectetur consequat. Nullam dapibus, felis at tincidunt pulvinar, eros augue volutpat nunc...</p>
+                    <!-- Add more paragraphs as needed -->
+                </div>
+            </div>
+        </div>
 
-            
+        <!-- Add more movie cards as needed -->
+
+    </div>
+
+</body>
+                </html>
+                

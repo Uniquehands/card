@@ -36,6 +36,31 @@
             color: #fff;
         }
 
+        .rating-stars {
+            color: #ffd700;
+            display: flex;
+            align-items: center;
+        }
+
+        .star {
+            margin-right: 5px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background-color: #ffd700;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
         h2, p {
             margin: 0;
         }
@@ -51,21 +76,24 @@
                 <h2>Movie Title 1</h2>
                 <p>Release Year: 2022</p>
                 <p>Genre: Action</p>
+                <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="tags">
+                    <div class="tag">Tag1</div>
+                    <div class="tag">Tag2</div>
+                    <div class="tag">Tag3</div>
+                    <div class="tag">Tag4</div>
+                    <div class="tag">Tag5</div>
+                </div>
             </div>
         </div>
 
         <div class="movie-card">
             <img class="movie-image" src="movie2.jpg" alt="Movie 2">
-            <div class="movie-details">
-                <h2>Movie Title 2</h2>
-                <p>Release Year: 2023</p>
-                <p>Genre: Drama</p>
-            </div>
-        </div>
 
-        <!-- Add more movie cards as needed -->
-
-    </section>
-
-</body>
-</html>
+            

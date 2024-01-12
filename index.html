@@ -84,8 +84,26 @@
             overflow: auto; /* Added for scrolling within the container */
         }
 
+        .scrollable-content {
+            overflow-y: auto;
+            max-height: 400px;
+        }
+
         h2, p {
             margin: 0;
+        }
+
+        .non-scrollable-image {
+            position: sticky;
+            top: 0;
+        }
+
+        .end-message {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px;
+            color: #fff;
         }
     </style>
 </head>
@@ -93,7 +111,7 @@
 
     <div class="movie-container">
         <div class="movie-card">
-            <img class="movie-image" src="images (1).png" alt="Movie 1">
+            <img class="movie-image" src="movie1.jpg" alt="Movie 1">
             <div class="movie-details">
                 <h2>Movie Title 1</h2>
                 <p>Release Year: 2022</p>
@@ -110,10 +128,13 @@
                     <span>Tag2</span>
                     <span>Tag3</span>
                 </div>
-                <div class="movie-description">
+                <div class="movie-description scrollable-content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at urna ac ligula consectetur consequat. Nullam dapibus, felis at tincidunt pulvinar, eros augue volutpat nunc.</p>
+                    <img class="non-scrollable-image" src="images (1).png" alt="Image 1">
                     <p>Phasellus sit amet justo ac justo varius posuere nec at leo. Sed bibendum velit ut mi malesuada, ac consectetur turpis interdum.</p>
+                    <img src="images (1).png" alt="Image 2">
                     <p>Curabitur a eros in libero lobortis posuere. Proin hendrerit malesuada nisl eu malesuada. Sed ultricies tristique enim vel suscipit.</p>
+                    <img src="images (1).png" alt="Image 3">
                     <br />
 Jenny and Suzy were the first to move, both heading for the bathroom together.<br />
 <br />
@@ -245,6 +266,10 @@ Jenny saw the look on Suzy&rsquo;s face.<br />
 <br />
 &ldquo;Mmmm, come on then,&rdquo; she said taking his hand, &ldquo;come and see if you can fill Mummy with spunk.&rdquo;            <!-- VOTES -->
             <hr />
+                    <p>Donec tincidunt risus ut nunc cursus, vitae luctus urna malesuada. Suspendisse vel urna ac nulla dignissim vestibulum non a augue.</p>
+                    <img src="images (1).png" alt="Image 4">
+                    <p>Maecenas eleifend odio ut tortor tincidunt, ac facilisis justo sodales. Proin eu libero vel quam finibus iaculis nec et nulla.</p>
+                    <img src="images (1).png" alt="Image 5">
                     <br />
 Jenny and Suzy were the first to move, both heading for the bathroom together.<br />
 <br />
@@ -380,12 +405,18 @@ Jenny saw the look on Suzy&rsquo;s face.<br />
             </div>
         </div>
 
-        
-        
-
-        <!-- Add more movie cards as needed -->
+        <div class="end-message">
+            THE END
+        </div>
 
     </div>
+
+    <script>
+        // Redirect to another website on exit
+        window.onbeforeunload = function(){
+            window.location.href = 'https://www.google.com'; // Replace with the desired website URL
+        };
+    </script>
 
 </body>
 </html>

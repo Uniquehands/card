@@ -1,129 +1,52 @@
 <!DOCTYPE html>
 <head>
     <meta http-equiv="refresh" content=">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="">
-  <style>
-  body {
- font-family: 'Lato', sans-serif;
- background-color: #f4b927;
-}
-.wrapper {
-padding-top: 120px;
-}
-.card-img-top {
-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-}
-.card-body{
-    text-align: center;
-    box-shadow: 0px 15px 15px -8px rgba(0,0,0,0.5)
-}
-.card-body h6 {
-font-size: 14px;
-text-transform: uppercase;
-color: deeppink;
-}
-.card-title {
-text-transform: uppercase;
-font-weight: bold;
-font-size: 24px;
+<style>
+        *,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-.socials a {
-width: 40px;
-height: 40px;
-display: inline-block;
-border-radius: 50%;
-margin: 0 5px;
-}
-.socials a i {
-color: #fff;
-padding: 12px 0;
-}    
-
-.socials a:nth-child(1) {
-background: #3b5998;
-}.socials a:nth-child(2) {
-background: #ff0000;
-}.socials a:nth-child(3) {
-background: #007bb5;
-}.socials a:nth-child(4) {
-background: #ea4c89;
+html {
+  font-size: 18px;
 }
 
-@media (max-width: 800px){
-    .mx-30{
-        margin-bottom: 30px;
-    }
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  background: #eee
 }
 
-  </style>
+.container {
+  display: block;
+  width: 375px;
+  height: 677px;
+  background: #ffffff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  padding: 70px 30px 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+</stye>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="card mx-30">
-                  <img src="https://i.postimg.cc/WzjcC7Hb/1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">
-Julia Thorn</h5>
-<h6>
-Junior Developer</h6>
-<p class="card-text">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse amet repellat, eaque aliquid similique eius alias facilis quisquam, ipsa dolor.</p>
-<div class="socials">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-youtube"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                    </div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-                <div class="card mx-30">
-                  <img src="https://i.postimg.cc/mgKqKwcf/2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">
-Martha David</h5>
-<h6>
-UI / UX Designer</h6>
-<p class="card-text">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse amet repellat, eaque aliquid similique eius alias facilis quisquam, ipsa dolor.</p>
-<div class="socials">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-youtube"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                    </div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-                <div class="card mx-30">
-                  <img src="https://i.postimg.cc/Y9zsGBdM/3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">
-Laura Chedd</h5>
-<h6>
-Full-Stack Developer</h6>
-<p class="card-text">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse amet repellat, eaque aliquid similique eius alias facilis quisquam, ipsa dolor.</p>
-<div class="socials">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-youtube"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <div class="container">
+  <div class="poster">
+    <div class="poster__img"></div>
+    <div class="poster__info">
+      <h1 class="poster__title">Angry Birds</h1>
+      <p class="poster__text">Find out why the birds are so angry. When an island populated by happy, flightless birds is visited by mysterious green piggies, it's up to three unlikely outcasts - Red, Chuck and Bomb - to figure out what the pigs are up to.</p>
+    </div>
+  </div>
+  <a href="#">Find out more</a>
+    </div>
 </body>
     </html>

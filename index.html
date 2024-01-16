@@ -8,19 +8,20 @@
         /* Add your custom styles here */
         body {
             font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
         #popup {
             display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            text-align: center;
             padding: 20px;
             background-color: #fff; /* White background */
             border: 1px solid #ccc;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             z-index: 1000;
-            text-align: left;
             max-width: 400px;
             color: #000;
         }

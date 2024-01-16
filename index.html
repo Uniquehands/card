@@ -46,6 +46,12 @@
             border-radius: 5px;
             margin-top: 10px;
         }
+        #closeButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -53,6 +59,7 @@
     <!-- Your website content goes here -->
 
     <div id="popup">
+        <div id="closeButton" onclick="closePopup()">X</div>
         <h2 id="header">Popup Header 1</h2>
         <img src="images (1).png" alt="Popup Image">
         <h2 id="header">Popup Header 2</h2>
@@ -65,6 +72,11 @@
         setTimeout(function() {
             document.getElementById('popup').style.display = 'block';
         }, 5000);
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
     </script>
 
 </body>

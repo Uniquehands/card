@@ -3,85 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DMJ MAKE MONEY ONLINE TRICK</title>
+    <title>Popup and Redirect</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: black;
             margin: 0;
             padding: 0;
-        }
-
-        .header {
-            background: #000;
-            color: #ffd700; /* Golden text */
-            text-align: center;
-            padding: 10px;
-            font-weight: bold;
-        }
-
-        .movie-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .movie-details {
-            padding: 1em;
-            color: white;
-            position: relative;
-            z-index: 1;
-        }
-
-        .movie-details h2 {
-            margin-top: 0;
-            color: Gold;
-        }
-
-        .rating-stars,
-        .tags,
-        .movie-description {
-            margin-top: 10px;
-        }
-
-        .rating-stars {
-            color: #ffd700;
-            display: flex;
-            align-items: center;
-        }
-
-        .star {
-            margin-right: 5px;
-        }
-
-        .tags {
-            color: white;
             text-align: center;
         }
 
-        .tags span {
-            background-color: gold;
-            padding: 5px 10px;
-            border-radius: 20px;
-            margin: 0 3px;
-        }
-
-        .tags::before {
-            content: "Tags: ";
-            font-weight: bold;
-        }
-
-        .movie-description {
-            text-align: justify;
-        }
-
-        #the-end {
-            text-align: center;
-            margin: 20px;
-            font-weight: bold;
-        }
-
-        /* Additional styles for the popup */
+        /* Popup styles */
         #popup {
             display: none;
             text-align: center;
@@ -92,7 +23,7 @@
             z-index: 1000;
             max-width: 70%; /* Adjust the width as needed */
             color: #000;
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -105,133 +36,42 @@
             margin-bottom: 10px;
         }
 
-        #header {
+        #popupHeader {
             font-size: 20px;
             margin-bottom: 5px;
         }
 
-        #subHeader {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        .ctaButton {
-            display: block;
-            padding: 10px;
-            background-color: #000; /* Black background */
-            color: #ffd700; /* Golden text color */
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            font-weight: bold;
-            border: 4px solid #ffd700; /* Thick golden border */
-        }
-
-        #closeButton {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            color: #ffd700; /* Golden text color */
-            font-weight: bold;
-            font-size: 20px;
-            border: 4px solid #ffd700; /* Thick golden border */
-            padding: 5px;
-            border-radius: 50%;
+        #popupScript {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>DMJ MAKE MONEY ONLINE TRICK</h1>
-        <h2 style="color:White;">Exposing Secret To Making Money Online</h2>
-    </div>
-
-    <div class="movie-container">
-        <div class="movie-card">
-            <img class="movie-image" src="images (1).png" alt="Movie 1">
-            <div class="movie-details">
-                <h2>Movie Title 1</h2>
-                <p>Release Year: 2022</p>
-                <p>Genre: Action</p>
-                <div class="rating-stars">
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                </div>
-                <div class="tags">
-                    <span>Tag1</span>
-                    <span>Tag2</span>
-                    <span>Tag3</span>
-                </div>
-                <div class="movie-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at urna ac ligula consectetur consequat. Nullam dapibus, felis at tincidunt pulvinar, eros augue volutpat nunc.</p>
-                    <p>Phasellus sit amet justo ac justo varius posuere nec at leo. Sed bibendum velit ut mi malesuada, ac consectetur turpis interdum.</p>
-                    <p>Curabitur a eros in libero lobortis posuere. Proin hendrerit malesuada nisl eu malesuada. Sed ultricies tristique enim vel suscipit.</p>
-                    <!-- Add more paragraphs as needed -->
-                </div>
-            </div>
-        </div>
-
-        <div class="movie-card">
-            <img class="movie-image" src="images (1).png" alt="Movie 2">
-            <div class="movie-details">
-                <h2>Movie Title 2</h2>
-                <p>Release Year: 2023</p>
-                <p>Genre: Drama</p>
-                <div class="rating-stars">
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                </div>
-                <div class="tags">
-                    <span>Tag4</span>
-                    <span>Tag5</span>
-                    <span>Tag6</span>
-                </div>
-                <div class="movie-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at urna ac ligula consectetur consequat. Nullam dapibus, felis at tincidunt pulvinar, eros augue volutpat nunc.</p>
-                    <p>Phasellus sit amet justo ac justo varius posuere nec at leo. Sed bibendum velit ut mi malesuada, ac consectetur turpis interdum.</p>
-                    <p>Curabitur a eros in libero lobortis posuere. Proin hendrerit malesuada nisl eu malesuada. Sed ultricies tristique enim vel suscipit.</p>
-                    <!-- Add more paragraphs as needed -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Add more movie cards as needed -->
-
-    </div>
-
     <!-- Popup code starts here -->
     <div id="popup">
-        <div id="closeButton" onclick="closePopup()">X</div>
-        <h2 id="header">Popup Header 1</h2>
+        <h2 id="popupHeader">Popup Header</h2>
         <img src="images (1).png" alt="Popup Image">
-        <h2 id="header">Popup Header 2</h2>
-        <p id="subHeader">Sub Header</p>
-        <a href="#" class="ctaButton">CTA Button 1</a>
+        <div id="popupScript">
+            <!-- Add your script here -->
+            <script>
+                // Example script
+                console.log('Script inside the popup');
+            </script>
+        </div>
     </div>
     <script>
-        // Function to show the popup after 5 seconds
-        setTimeout(function() {
+        // Function to show the popup onload
+        window.onload = function() {
             document.getElementById('popup').style.display = 'block';
-        }, 5000);
+        };
 
-        // Function to close the popup
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
+        // Function to redirect after 2 seconds
+        setTimeout(function() {
+            window.location.href = "https://www.google.com";
+        }, 2000);
     </script>
     <!-- Popup code ends here -->
-
-    <div id="the-end">
-        THE END
-    </div>
 
 </body>
 </html>

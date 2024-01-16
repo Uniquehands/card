@@ -3,31 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exit Popup Example</title>
-    <script>
-        window.onbeforeunload = function() {
-            return "Are you sure you want to leave?";
-        };
-    </script>
+    <title>Your Website</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: left;
+            max-width: 400px;
+        }
+        #popup img {
+            max-width: 100%;
+            height: auto;
+            float: left;
+            margin-right: 10px;
+        }
+        #popup-content {
+            float: left;
+            width: calc(100% - 160px); /* Adjust the width based on your needs */
+        }
+        #subHeader {
+            color: #000;
+        }
+        #header {
+            color: #000;
+            margin-top: 0;
+        }
+        .ctaButton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #ffd700; /* Golden text color */
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Your Website Content Goes Here</h1>
 
-    <!-- Popup Content -->
-    <div id="exitPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 20px; border: 1px solid #ccc;">
-        <p>This is a popup. Are you sure you want to leave?</p>
-        <button onclick="closePopup()">Stay</button>
+    <!-- Your website content goes here -->
+
+    <div id="popup">
+        <img src="images (1).png" alt="Popup Image">
+        <div id="popup-content">
+            <p id="subHeader">Sub Header</p>
+            <h2 id="header">Popup Header</h2>
+            <a href="#" class="ctaButton">CTA Button 1</a>
+            <a href="#" class="ctaButton">CTA Button 2</a>
+        </div>
     </div>
 
     <script>
-        function closePopup() {
-            document.getElementById('exitPopup').style.display = 'none';
-        }
-
-        window.onbeforeunload = function() {
-            document.getElementById('exitPopup').style.display = 'block';
-            return "Are you sure you want to leave?";
-        };
+        // Function to show the popup after 5 seconds
+        setTimeout(function() {
+            document.getElementById('popup').style.display = 'block';
+        }, 5000);
     </script>
+
 </body>
 </html>

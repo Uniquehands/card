@@ -3,56 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handwritten Diary</title>
-    <style>
-        body {
-            font-family: 'Lucida Handwriting', cursive;
-            background-color: #f5f5f5;
-            color: #333;
-            text-align: center;
-            margin: 20px;
-        }
-
-        h1 {
-            font-size: 24px;
-            margin: 10px 0 0;
-            color: #333;
-        }
-
-        h2, h3 {
-            font-size: 18px;
-            margin: 5px 0;
-            color: #555;
-        }
-
-        img {
-            display: block;
-            margin: 20px auto;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            text-align: justify;
-        }
-    </style>
+    <title>Exit Popup Example</title>
+    <script>
+        window.onbeforeunload = function() {
+            return "Are you sure you want to leave?";
+        };
+    </script>
 </head>
 <body>
+    <h1>Your Website Content Goes Here</h1>
 
-    <h1>My Beautiful Diary</h1>
-    <h2>Subtitle 1</h2>
-    <h3>Subtitle 2</h3>
+    <!-- Popup Content -->
+    <div id="exitPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 20px; border: 1px solid #ccc;">
+        <p>This is a popup. Are you sure you want to leave?</p>
+        <button onclick="closePopup()">Stay</button>
+    </div>
 
-    <img src="images (1).png" alt="Captivating Image">
+    <script>
+        function closePopup() {
+            document.getElementById('exitPopup').style.display = 'none';
+        }
 
-    <p>
-        Once upon a time in a world of enchantment, where dreams danced with reality, and every sunset painted a story...
-        (Add your captivating and beautiful text here.)
-        ...
-    </p>
-
+        window.onbeforeunload = function() {
+            document.getElementById('exitPopup').style.display = 'block';
+            return "Are you sure you want to leave?";
+        };
+    </script>
 </body>
 </html>
